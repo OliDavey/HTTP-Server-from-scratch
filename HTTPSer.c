@@ -13,7 +13,7 @@ int main(){
     struct sockaddr_in addr;
     addr.sin_family = AF_INET;
     addr.sin_addr.s_addr = 0;
-    addr.sin_port = htons(8080);
+    addr.sin_port = htons(8080);// converts short 16 byte integer from host byte order to Internet network byte order
     bind(s, &addr, sizeof(addr));
    
 
